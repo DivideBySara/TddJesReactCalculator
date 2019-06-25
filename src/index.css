@@ -5,13 +5,30 @@ app variables
 :root {
   /* font */
   --main-font: 'Orbitron', sans-serif;
+
+  /* background color */
+  --calculator-background-color: #696969;
+
+  /* dimensions for calculator */
+  --calculator-height: 72%;
+  --calculator-width: 36%;
+}
+
+@media screen and (max-width: 768) {
+  :root {
+    /* calculator dimensions */
+    --calculator-height: 100%;
+    --calculator-width: 100%;
+  }
 }
 
 /*
 app CSS reset
 */
 
-body, div, p {
+body,
+div,
+p {
   margin: 0;
   padding: 0;
 }

@@ -4,6 +4,19 @@ import App from "./App";
 import Calculator from "../Calculator/Calculator";
 
 describe("App", () => {
+  it("should render correctly", () => {
+    // Arrange
+    const wrapper = shallow(<App />);
+
+    // Act
+
+    // Assert
+    expect(wrapper).toMatchSnapshot();
+
+    // Cleanup
+    wrapper.unmount();
+  });
+
   it("should render a <div />", () => {
     // Arrange
     const wrapper = shallow(<App />);
