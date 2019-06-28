@@ -3,6 +3,17 @@ import { shallow } from "enzyme";
 import Display from "./Display";
 
 describe("Display component", () => {
+  it("should render correctly", () => {
+    // Arrange
+    const wrapper = shallow(<Display displayValue={""} />);
+
+    // Assert
+    expect(wrapper).toMatchSnapshot();
+
+    // Cleanup
+    wrapper.unmount();
+  });
+
   it("should render a <div />", () => {
     // Arrange
     const wrapper = shallow(<Display displayValue={""} />);
