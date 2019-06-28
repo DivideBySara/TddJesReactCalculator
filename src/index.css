@@ -4,7 +4,10 @@ app variables
 
 :root {
   /* font */
-  --main-font: 'Orbitron', sans-serif;
+  --main-font: "Orbitron", sans-serif;
+  --display-text-color: #23e000;
+  --display-text-size: 4em;
+  --display-text-weight: 400;
 
   /* background color */
   --calculator-background-color: #696969;
@@ -16,6 +19,9 @@ app variables
 
 @media screen and (max-width: 768) {
   :root {
+    /* font */
+    --display-text-size: 10em;
+
     /* calculator dimensions */
     --calculator-height: 100%;
     --calculator-width: 100%;
